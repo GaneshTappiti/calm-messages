@@ -81,18 +81,18 @@ const ConversationList = ({
             }`}
           >
             {/* Avatar */}
-            <div className="w-10 h-10 rounded-full bg-glass-strong border border-glass-border-strong flex items-center justify-center text-[10px] font-semibold text-foreground shrink-0">
+            <div className="w-10 h-10 min-w-[40px] rounded-full bg-glass-strong border border-glass-border-strong flex items-center justify-center text-[10px] font-semibold text-foreground shrink-0">
               {conv.avatar}
             </div>
             {/* Content */}
-            <div className="flex-1 min-w-0">
-              <div className="flex items-center justify-between">
-                <span className={`text-sm font-medium ${conv.unread ? "text-foreground" : "text-foreground"}`}>
+            <div className="flex-1 min-w-0 overflow-hidden">
+              <div className="flex items-center justify-between gap-2">
+                <span className="text-sm font-medium text-foreground truncate">
                   {conv.name}
                 </span>
-                <span className="text-xs text-[hsl(var(--text-muted))]">{conv.time}</span>
+                <span className="text-xs text-[hsl(var(--text-muted))] whitespace-nowrap shrink-0">{conv.time}</span>
               </div>
-              <p className={`text-xs truncate mt-0.5 ${conv.unread ? "text-[hsl(var(--text-secondary))]" : "text-[hsl(var(--text-muted))]"}`}>
+              <p className="text-xs truncate mt-0.5 text-[hsl(var(--text-muted))]">
                 {conv.lastMessage}
               </p>
             </div>
