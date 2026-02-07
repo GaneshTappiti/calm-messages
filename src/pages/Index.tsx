@@ -15,7 +15,7 @@ const Index = () => {
     <div className="h-screen w-full bg-background flex">
       {/* Conversation List */}
       <div
-        className={`w-full lg:w-[380px] lg:border-r border-glass-border h-full ${
+        className={`w-full lg:w-[380px] lg:border-r border-white/10 h-full ${
           activeId ? "hidden lg:flex lg:flex-col" : "flex flex-col"
         }`}
       >
@@ -44,7 +44,7 @@ const Index = () => {
           />
         ) : (
           <div className="flex-1 flex items-center justify-center">
-            <p className="text-[hsl(var(--text-muted))] text-sm">Select a conversation</p>
+            <p className="text-white/40 text-sm">Select a conversation</p>
           </div>
         )}
       </div>
