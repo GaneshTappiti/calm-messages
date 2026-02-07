@@ -53,7 +53,7 @@ const ConversationList = ({
                 : "text-[hsl(var(--text-secondary))] border border-transparent"
             }`}
           >
-            Chats
+            Chats<span className="ml-1 text-[hsl(var(--text-muted))]">(19)</span>
           </button>
           <button
             onClick={() => onTabChange("contacts")}
@@ -63,7 +63,7 @@ const ConversationList = ({
                 : "text-[hsl(var(--text-secondary))] border border-transparent"
             }`}
           >
-            Contacts
+            Contacts<span className="ml-1 text-[hsl(var(--text-muted))]">(10)</span>
           </button>
         </div>
       </div>
@@ -81,7 +81,7 @@ const ConversationList = ({
             }`}
           >
             {/* Avatar */}
-            <div className="w-10 h-10 rounded-full bg-glass-strong border border-glass-border-strong flex items-center justify-center text-xs font-semibold text-foreground shrink-0">
+            <div className="w-10 h-10 rounded-full bg-glass-strong border border-glass-border-strong flex items-center justify-center text-[10px] font-semibold text-foreground shrink-0">
               {conv.avatar}
             </div>
             {/* Content */}

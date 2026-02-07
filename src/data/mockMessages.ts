@@ -15,31 +15,47 @@ export interface Message {
 }
 
 export const conversations: Conversation[] = [
-  { id: "1", name: "Alex Rivera", avatar: "AR", lastMessage: "Sounds good, let's sync tomorrow", time: "Now", unread: true },
-  { id: "2", name: "Jordan Lee", avatar: "JL", lastMessage: "The deck is ready for review", time: "2m", unread: true },
-  { id: "3", name: "Sam Chen", avatar: "SC", lastMessage: "Thanks for the update!", time: "15m", unread: false },
-  { id: "4", name: "Morgan Blake", avatar: "MB", lastMessage: "Can you share the link?", time: "1h", unread: false },
-  { id: "5", name: "Taylor Kim", avatar: "TK", lastMessage: "See you at the event", time: "3h", unread: false },
-  { id: "6", name: "Casey Nguyen", avatar: "CN", lastMessage: "Got it, will follow up", time: "Yesterday", unread: false },
-  { id: "7", name: "Riley Patel", avatar: "RP", lastMessage: "Great call today", time: "Yesterday", unread: false },
-  { id: "8", name: "Avery Martinez", avatar: "AM", lastMessage: "Let me check and get back to you", time: "Mon", unread: false },
+  { id: "1", name: "23981A05B6 SREE VENKATANADH IRAGAVARAPU", avatar: "SVI", lastMessage: "I would like to connect regarding this item. Item: Casio FX-991ES Plus-2nd Edition Scientific Calculator Price: ₹749 Location: Nano labs", time: "about 15 hours", unread: true },
+  { id: "2", name: "24981A426F YASARAPU BHANOJI RAO", avatar: "YBR", lastMessage: "Hi", time: "3 days", unread: true },
+  { id: "3", name: "23981A42X5 KARRI VENKATA SAI CHARAN", avatar: "KVSC", lastMessage: "Hi ra lamidi", time: "3 days", unread: true },
+  { id: "4", name: "22981A44D4 PARCHURI YASWANTH", avatar: "PY", lastMessage: "Hey", time: "3 days", unread: true },
+  { id: "5", name: "24981A424A GUDIMETLA REVANTH SAI RAM", avatar: "GRSR", lastMessage: "Thanks for letting me know!", time: "4 days", unread: true },
+  { id: "6", name: "24981A4407 CHINTAPALLI SRI ASHRITH", avatar: "CSA", lastMessage: "Thanks for letting me know!", time: "4 days", unread: true },
+  { id: "7", name: "24981A424P EDDIPILLI JEEVAN SAI", avatar: "EJS", lastMessage: "Thanks for letting me know!", time: "5 days", unread: true },
+  { id: "8", name: "Vijay Kumar A", avatar: "VKA", lastMessage: "good morning sir", time: "5 days", unread: false },
+  { id: "9", name: "21981A0526 CHARAN MANIKANTA NALLA", avatar: "CMN", lastMessage: "cool", time: "10 days", unread: true },
+  { id: "10", name: "23981A42AB SAMATHAMU KULDEEP KUMAR", avatar: "SKK", lastMessage: "Thanks for letting me know!", time: "21 days", unread: true },
 ];
 
 export const messagesByConversation: Record<string, Message[]> = {
   "1": [
-    { id: "m1", text: "Hey, are you free to chat about the project?", time: "10:30", incoming: true },
-    { id: "m2", text: "Yeah, what's up?", time: "10:32", incoming: false },
-    { id: "m3", text: "I was thinking we could restructure the timeline a bit", time: "10:33", incoming: true },
-    { id: "m4", text: "That makes sense. What did you have in mind?", time: "10:35", incoming: false },
-    { id: "m5", text: "Push the launch to next Friday, gives us buffer", time: "10:36", incoming: true },
-    { id: "m6", text: "Sounds good, let's sync tomorrow", time: "10:38", incoming: false },
+    { id: "m1", text: "I would like to connect regarding this item. Item: Casio FX-991ES Plus-2nd Edition Scientific Calculator Price: ₹749 Location: Nano labs", time: "15h ago", incoming: true },
   ],
   "2": [
-    { id: "m1", text: "The deck is ready for review", time: "09:15", incoming: true },
-    { id: "m2", text: "Perfect, I'll take a look this afternoon", time: "09:20", incoming: false },
+    { id: "m1", text: "Hi", time: "3 days ago", incoming: true },
   ],
   "3": [
-    { id: "m1", text: "Shipped the new feature to staging", time: "Yesterday", incoming: false },
-    { id: "m2", text: "Thanks for the update!", time: "Yesterday", incoming: true },
+    { id: "m1", text: "Hi ra lamidi", time: "3 days ago", incoming: true },
+  ],
+  "4": [
+    { id: "m1", text: "Hey", time: "3 days ago", incoming: true },
+  ],
+  "5": [
+    { id: "m1", text: "Thanks for letting me know!", time: "4 days ago", incoming: true },
+  ],
+  "6": [
+    { id: "m1", text: "Thanks for letting me know!", time: "4 days ago", incoming: true },
+  ],
+  "7": [
+    { id: "m1", text: "Thanks for letting me know!", time: "5 days ago", incoming: true },
+  ],
+  "8": [
+    { id: "m1", text: "good morning sir", time: "5 days ago", incoming: true },
+  ],
+  "9": [
+    { id: "m1", text: "cool", time: "10 days ago", incoming: true },
+  ],
+  "10": [
+    { id: "m1", text: "Thanks for letting me know!", time: "21 days ago", incoming: true },
   ],
 };
