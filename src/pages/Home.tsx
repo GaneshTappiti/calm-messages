@@ -5,7 +5,7 @@ import RightSidebar from "@/components/home/RightSidebar";
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-white">
       <TopNav />
       <div className="max-w-[1200px] mx-auto px-4 py-6 flex gap-6">
         <LeftSidebar />
