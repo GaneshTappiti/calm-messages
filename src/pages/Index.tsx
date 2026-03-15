@@ -12,10 +12,9 @@ const Index = () => {
   const activeMessages = activeId ? messagesByConversation[activeId] || [] : [];
 
   return (
-    <div className="h-screen w-full bg-background flex">
-      {/* Conversation List */}
+    <div className="h-screen w-full bg-white flex">
       <div
-        className={`w-full lg:w-[380px] lg:border-r border-white/10 h-full ${
+        className={`w-full lg:w-[380px] lg:border-r border-black/10 h-full ${
           activeId ? "hidden lg:flex lg:flex-col" : "flex flex-col"
         }`}
       >
@@ -30,7 +29,6 @@ const Index = () => {
         />
       </div>
 
-      {/* Chat View */}
       <div
         className={`flex-1 h-full ${
           activeId ? "flex flex-col" : "hidden lg:flex lg:flex-col"
@@ -44,7 +42,7 @@ const Index = () => {
           />
         ) : (
           <div className="flex-1 flex items-center justify-center">
-            <p className="text-white/40 text-sm">Select a conversation</p>
+            <p className="text-black/40 text-sm">Select a conversation</p>
           </div>
         )}
       </div>
